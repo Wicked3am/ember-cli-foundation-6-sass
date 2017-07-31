@@ -1,7 +1,10 @@
 import Ember from "ember";
 
 export default Ember.Component.extend({
+  classNames: [ 'off-canvas', 'in-canvas-for-large', 'position-left' ],
+
   didInsertElement() {
-    new Foundation.OffCanvas( this.$().children().first() );
+    this.$().attr( 'data-off-canvas', '' );
+    new Foundation.OffCanvas( this.$() );
   }
 });
