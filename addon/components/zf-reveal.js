@@ -7,7 +7,7 @@ export default Ember.Component.extend(zfWidget, {
   classNames: ['reveal'],
 
   /** @member Attribute bindings */
-  attributeBindings: ['data-reveal'],
+  attributeBindings: ['data-reveal', 'data-animation-in', 'data-animation-out'],
 
   /** @member Makes the data attribute binding appear */
   'data-reveal': ' ',
@@ -20,7 +20,7 @@ export default Ember.Component.extend(zfWidget, {
   /** @member Foundation specific options */
   'zfOptions': ['showDelay', 'showDelay', 'closeOnClick', 'closeOnEsc', 'multipleOpened',
                 'vOffset', 'hOffset', 'fullScreen', 'btmOffsetPct', 'overlay', 'resetOnClose',
-                'deepLink'],
+                'deepLink', 'dataAnimationIn', 'dataAnimationOut'],
 
 
   /**
